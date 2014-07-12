@@ -1,0 +1,88 @@
+/* 
+    Created on : Jul 12, 2014, 10:25:37 AM
+    Author     : ross
+    
+    CSS - based dropdown menu system
+
+    Color Reference
+    ---------------------------------
+    Sky Blue    :   #467fd4;
+    
+*/
+
+/* --- background color --- */
+#main-menu-wrapper{
+    background-color:#467fd4;
+    color:#fff;
+    display:table;
+    width:100%;
+}
+
+/* --- Main Menu --- */
+
+ul#main-menu, ul#main-menu ul{
+    list-style-type:none; padding:0px; margin:0px;
+}
+ul#main-menu li{
+    float:left; position:relative; padding:0px; 
+}
+ul#main-menu li a{
+    display:table;
+    text-decoration:none;
+    color:#fff;
+}
+
+/* --- Padding Values --- */
+
+ul#main-menu li a, ul#main-menu ul li a{
+    padding:10px 15px 10px 15px;
+    padding:10px 15px 10px 15px;
+}
+
+/*
+    Sub-Navigation UL
+*/
+
+ul#main-menu ul {
+    position:absolute; display:none; margin:0px; padding:0px;
+    z-index: 999;
+}
+ul#main-menu li:hover > ul {
+	display:block;
+        min-width:120px;
+}
+ul#main-menu ul {
+    background-color:#316abf;
+}
+ul#main-menu ul li{
+    float:none; padding:0px;
+    
+}
+ul#main-menu ul li a{
+    display:block;
+}
+
+/* --- Hover States --- */
+
+/* Main Menu Hover State */
+ul#main-menu li a:hover{
+    background-color:#316abf;
+}
+/* Sub-Navigation Hover State */
+ul#main-menu ul li a:hover, ul#main-menu li.current_page_item ul li a:hover,
+ul#main-menu li.current-menu-ancestor ul li a:hover, ul#main-menu li.current-menu-item ul li a:hover,
+ul#main-menu li.current-menu-parent ul li a:hover
+{
+    background-color:#000;
+}
+
+
+/* --- On States --- */
+
+ul#main-menu li.current-menu-item > a{
+    background-color:#6d98d8;
+}
+
+ul#main-menu li.current-menu-parent > a{
+    background-color:#6d98d8;
+}
