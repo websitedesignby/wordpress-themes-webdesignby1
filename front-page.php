@@ -9,13 +9,9 @@
 get_header(); 
 
 ?>
-<h1>Front Page</h1>
-
 <div id="main-content" class="main-content">
-    
     <div id="primary" class="content-area">
         <div id="content" class="site-content" role="main">
-            
             <?php
 			if ( have_posts() ) :
 				// Start the Loop.
@@ -38,11 +34,7 @@ get_header();
 
 			endif;
 		?>
-            
         </div>
     </div>
-    
 </div><!-- #main-content -->
-
-
 <?php get_footer(); ?>

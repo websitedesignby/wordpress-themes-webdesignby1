@@ -64,7 +64,7 @@ add_action( 'after_setup_theme', 'webdesignby1_setup' );
 function webdesignby1_styles()
 {
     wp_enqueue_style( 'main', get_template_directory_uri() . '/styles/main.css' );
-    wp_enqueue_style( 'menu', get_template_directory_uri() . '/styles/menu.css' );
+    // wp_enqueue_style( 'menu', get_template_directory_uri() . '/styles/menu.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'webdesignby1_styles' );

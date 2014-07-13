@@ -5,4 +5,60 @@
 body{
     margin:0px; padding:0px;
     font-family: arial, helvetica, 'sans-serif';
+    background-color: #dbdbdb;
+}
+
+/* --- Header Styles --- */
+
+#site-header{
+    position: relative;
+    background-color:#484848;
+    color:#fff;
+}
+
+#site-header a{
+    color:#ccc;
+}
+
+/* --- The Logo --- */
+
+#site-header #logo{
+    padding:5px;
+    margin:5px;
+    border:1px dotted #ccc;
+    height:90px;
+    width:226px;
+    float:left;
+}
+#site-header #logo a{
+    position: relative;
+    height:90px;
+    width:226px;
+    display:block;
+    background-image:url(../images/logo.png);
+    background-repeat:no-repeat;
+}
+
+/* --- site description --- */
+
+#site-header .site-description{
+    float:left;
+    margin-top:45px;
+    margin-left:15px;
+}
+
+/* --- contact info --- */
+
+#site-header .contact-info{
+    float:right;
+    margin:15px 15px 0px 0px;
+}
+
+/*
+    --- Primary Content
+*/
+
+#primary.content-area{
+    background-color:#ffffff;
+    padding:30px 15px 30px 15px;
 }

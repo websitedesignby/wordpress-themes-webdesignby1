@@ -1,0 +1,12 @@
+/* 
+    Created on : Jul 12, 2014, 5:47:41 PM
+    Author     : ross
+*/
+#footer{
+    padding:30px 15px 30px 15px;
+}
+ul#footer-menu{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+}

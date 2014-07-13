@@ -16,10 +16,10 @@
     color:#fff;
     display:table;
     width:100%;
+    position: relative;
 }
 
 /* --- Main Menu --- */
-
 ul#main-menu, ul#main-menu ul{
     list-style-type:none; padding:0px; margin:0px;
 }

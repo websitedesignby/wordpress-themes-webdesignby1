@@ -31,8 +31,13 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <header id="masthead" class="site-header" role="banner">
+    <header id="site-header" role="banner">
         <div id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"></a></div>
         <div class="site-description"><?php bloginfo( 'description' ); ?></div>
+        <div class="contact-info">
+            <div class="phone">(XXX) XXX-XXXX</div>
+            <div class="fax">(XXX) XXX-XXXXX</div>
+            <div class="email"><a href="mailto:info@example.com">info@example.com</a></div>
+        </div>
         <?php wp_nav_menu( array('theme_location' => 'primary', 'container_id'=>'main-menu-wrapper', 'menu_id'=> 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
     </header>
